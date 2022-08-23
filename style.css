@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #70c6c7;
+    background-color: #ffcfed;
 }
 
 .resume-contents {
@@ -21,14 +21,15 @@ body {
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #00204A;
+    background-color: #ff57bf;
+    border-radius: 30px 0px 0px 30px;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #4B6982;
-    border-radius: 0px 60px 0px 0px;
+    background-color: #4e0032;
+    border-radius: 0px 30px 30px 0px;
 }
 
 .left-section-content{
@@ -37,27 +38,26 @@ body {
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #1B2631;
+    border-bottom: 2px solid #ffffff;
 }
 
 .profile .profile-image {
     width: 100%;
     border-radius: 50%;
-    border: 8px solid #1B2631;
+    border: 8px solid #ffffff;
 }
 
 .name {
-    color: #D6DBDF;
+    color: #ffffff;
     font-size: 30px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     padding: 1rem 0;
 }
 
 .profession {
-    color: #FDB44B;
+    color: #97005d;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -68,7 +68,7 @@ body {
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-    color: #FDB44B;
+    color: #97005d;
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -87,16 +87,16 @@ body {
     padding: .4rem 0;
     display: flex;
     align-items: center;
-    color: #d6dbdfaf;
+    color: #ffffff;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
-    font-size: 18px;
-    color: #2E86C1;
+    font-size: 22px;
+    color: #ab006e;
 }
 
 .skills ul {
@@ -104,7 +104,7 @@ body {
 }
 .skills ul li p {
     padding: .4rem 0;
-    color: #d6dbdfaf;
+    color: #ffffff;
     font-size: 18px;
     letter-spacing: 1px;
     display: flex;
@@ -135,7 +135,7 @@ body {
 }
 
 .right-title {
-    color: #70C6C7;
+    color: #ffb950;
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -147,13 +147,13 @@ body {
 }
 
 .gap {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
 }
 .about-me-contents {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
-    color: #F1F8FD;
+    color: #ffffff;
 }
 
 .experience-contents,
@@ -161,8 +161,7 @@ body {
 .awards-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 2rem;
-    color: #F1F8FD;
+    color: #ffffff;
 }
 
 .exp-company-name,
@@ -172,8 +171,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FDB44B;
-    padding-bottom: .4rem;
+    color: #ffffff;
+    padding-bottom: .8rem;
 }
 
 .exp-time-period,
@@ -191,8 +190,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FDB44B;
-    padding-bottom: .4rem;
+    color: #ffffff;
+    padding-bottom: .8rem;
 }
 
 .exp-desc,
@@ -201,7 +200,7 @@ body {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.5rem;
-    border-left: 3px solid #a5a3a3;
+    border-left: 3px solid #ff57bf;
     padding-left: 5px;
 }
 
@@ -229,9 +228,25 @@ body {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .left-section {
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .right-section {
+        border-radius: 0 0 30px 30px;
+    }
 }
 
 @media screen and (max-width:390px) {
+    .left-section {
+        border-radius: 0;
+    }
+    
+    .right-section {
+        border-radius: 0;
+    }
+
     .resume-contents {
         width: 100%;
         margin: 0 auto;
@@ -260,7 +275,6 @@ body {
 
     .contact-info ul li i,
     .references ul li i {
-        /* padding-right: 1rem; */
         font-size: 12px;
     }
 
@@ -290,4 +304,17 @@ body {
     .awards-name {
         font-size: 18px;
     }
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.exp-left, .exp-right, .education-right, .education-left, .awards-left, .awards-right {
+    margin-bottom: 20px;
 }
